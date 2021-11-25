@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model string, string, string, string, DateTime, string
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="FirstName">Имя</label>
+        <input name="FirstName" class="form-control" />
+        <label for="LastName">Фамилия</label>
+        <input name="LastName" class="form-control" />
+        <label for="Address">Адрес проживания</label>
+        <input name="Address" class="form-control" />
+        <label for="PhoneNumber">Номер телефона</label>
+        <input name="PhoneNumber" class="form-control" />
+        <label for="DateBirth">День рождения</label>
+        <input name="DateBirth" class="form-control" />
+        <label for="Passport">Номер паспорта</label>
+        <input name="Passport" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Добавить</button>
+</form>
